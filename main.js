@@ -63,12 +63,10 @@ $(document).ready(function(){
 					var items = parsed_json['results'];
 					$.each(items, function(i, val){
 						var title = val['title'];
-						var year = val['release_year'];
 						var image = val["artwork_304x171"];
 					everything += "<li class='thumbnail'>";
 					everything += "<img src='" + image +"' >";
 					everything += "<h4>" + title + "</h4>";
-					everything += "<h5>" + year + "</h5>";
 					everything += "</li>";
 					});
 			$("#searchResults").html(everything);
