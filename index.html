@@ -2,18 +2,59 @@
 <html>
 	<head>
 		<title>Lab 2</title>
-		<style type="text/css" src="style.css"></style>
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
 	</head>
+
 	<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project TWO</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+	<div class = "content">
 		<script type="text/javascript" src="main.js"></script>
 		<h1>See which movies and tv shows are on the services below!</h1>
-		<input type ="submit" id="moviesNetflix" value="See which movies are on Netflix">
-		<input type ="submit" id="moviesHulu" value="See which movies are on Hulu Plus">
-		<input type ="submit" id="moviesAmazon" value="See which movies are on Amazon Prime">
-		<input type ="submit" id="showsNetflix" value="See which shows are on Netflix">
-		<input type ="submit" id="showsHulu" value="See which shows are on Hulu Plus">
-		<input type ="submit" id="showsAmazon" value="See which shows are on Amazon Prime">
-		<div id="searchResults"></div>
+		<div class="btn-container text-center">
+			<input type ="submit" class="btn btn-default" id="moviesNetflix" value="See which movies are on Netflix">
+			<input type ="submit" class="btn btn-default" id="moviesHulu" value="See which movies are on Hulu Plus">
+			<input type ="submit" class="btn btn-default" id="moviesAmazon" value="See which movies are on Amazon Prime">
+			<input type ="submit" class="btn btn-default" id="showsNetflix" value="See which shows are on Netflix">
+			<input type ="submit" class="btn btn-default" id="showsHulu" value="See which shows are on Hulu Plus">
+			<input type ="submit" class="btn btn-default" id="showsAmazon" value="See which shows are on Amazon Prime">
+		</div>
+		
+		<div class="resultBox text-center">
+			<ul id="searchResults" class="text-center"></ul>
+		</div>
+	</div>
+
+	<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
 </html>

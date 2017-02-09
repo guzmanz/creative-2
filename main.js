@@ -39,7 +39,7 @@ $(document).ready(function(){
 						var title = val['title'];
 						var year = val['release_year'];
 						var image = val["poster_240x342"];
-					everything += "<li>";
+					everything += "<li class='thumbnail'>";
 					everything += "<img src='" + image +"' >";
 					everything += "<h4>" + title + "</h4>";
 					everything += "<h5>" + year + "</h5>";
@@ -65,7 +65,7 @@ $(document).ready(function(){
 						var title = val['title'];
 						var year = val['release_year'];
 						var image = val["artwork_304x171"];
-					everything += "<li>";
+					everything += "<li class='thumbnail'>";
 					everything += "<img src='" + image +"' >";
 					everything += "<h4>" + title + "</h4>";
 					everything += "<h5>" + year + "</h5>";
